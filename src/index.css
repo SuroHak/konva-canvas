@@ -11,3 +11,80 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+button:focus {
+  outline: none;
+}
+
+.canvases-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+#canvas {
+  border: 1px solid palevioletred;
+}
+
+#react-konva {
+  border: 1px solid yellow;
+  width: 300px;
+  height: 300px;
+}
+
+.konva-container {
+  border: 1px solid greenyellow;
+  width: 300px;
+  height: 300px;
+}
+
+.filter-types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.filter-btns {
+  width: 80px;
+  height: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid darkgreen;
+  border-radius: 20px;
+  font-size: 12px;
+  color: darkblue;
+  transition: background-color, color, transform .3s;
+}
+
+.filter-btns:hover {
+  background-color: darkgreen;
+  color: whitesmoke;
+  transform: scale(1.08);
+}
+
+.filter-sliders {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.filter-slider {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-slider .rc-slider {
+  width: 86%;
+}
+
+.inp-value-text {
+  user-select: none;
+  color: darkcyan;
+}
+
