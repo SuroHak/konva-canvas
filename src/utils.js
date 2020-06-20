@@ -102,7 +102,7 @@ export const drawEffectInKonva = ({ stage, type, value, localActiveFilter, setLo
 
     switch (type.toLowerCase()) {
         case 'blur':
-            img.blurRadius(Math.abs(value));
+            img.blurRadius(value);
             break;
         case 'brighten':
             img.brightness(value / 150);
@@ -120,13 +120,13 @@ export const drawEffectInKonva = ({ stage, type, value, localActiveFilter, setLo
             img.noise(value / 120);
             break;
         case 'pixelate':
-            img.pixelSize(Math.abs(value / 5));
+            img.pixelSize(value / 5);
             break;
         case 'posterize':
-            img.levels(Math.abs(value / 100))
+            img.levels(value / 100)
             break;
         case 'threshold':
-            img.threshold(Math.abs(value / 120));
+            img.threshold(value / 120);
             break;
         default:
             break;

@@ -36,7 +36,7 @@ const Filters = () => {
                 {slidersData.map(el => (
                     <div key={el.id} className="filter-slider">
                         <Slider
-                            min={-100}
+                            min={0}
                             max={100}
                             value={inputValues[el.type]}
                             step={1}
