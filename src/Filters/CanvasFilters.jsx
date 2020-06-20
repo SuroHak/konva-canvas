@@ -11,7 +11,7 @@ const CanvasFilters = ({ image, activeFilter, value }) => {
 
         drawEffectInCanvas({
             type: activeFilter,
-            value,
+            value: Math.abs(value),
             ctx: canvasRef.current.getContext('2d'),
             image
         });

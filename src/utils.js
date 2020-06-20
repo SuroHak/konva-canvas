@@ -141,13 +141,13 @@ export const drawEffectInCanvas = ({ type, value, ctx, image }) => {
 
     switch (type.toLowerCase()) {
         case 'blur':
-            ctx.filter = `blur(${Math.abs(value / 10)}px)`
+            ctx.filter = `blur(${value / 10}px)`
             break;
         case 'brighten':
-            ctx.filter = `brightness(${Math.abs(value / 20)})`;
+            ctx.filter = `brightness(${value / 20})`;
             break;
         case 'contrast':
-            ctx.filter = `contrast(${Math.abs(value / 20)})`;
+            ctx.filter = `contrast(${value / 20})`;
             break;
         case 'grayscale':
             ctx.filter = `grayscale(${value + 1})`;
